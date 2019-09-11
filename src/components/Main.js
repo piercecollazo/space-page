@@ -46,6 +46,23 @@ export default class Main extends Component {
 
     }
 
+    componentDidMount(){
+        fetch('http://api.open-notify.org/iss-now.json')
+            .then(position => {
+                return position.json()
+            })
+            .then(data => {
+                this.setState({
+                    lat: data.iss_position.latitude,
+                    long:data.iss_position.longitude
+                })
+            })
+            .catch(error =>{
+                console.log(error)
+            })
+    }
+    
+
     rosterFill(){
        return this.state.roster.forEach(person =>{
            return (<li>{person.name}</li>)
