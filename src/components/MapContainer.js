@@ -7,7 +7,7 @@ const style = {
     height: '400px'
   }
   
-
+// Still unsure why this isn't live updating properly. Perhaps an issue with the state no longer being passed along after the initial mounting in Main.js?
 export class MapContainer extends React.Component {
 
 
@@ -43,7 +43,7 @@ export class MapContainer extends React.Component {
 }
  
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyDa3ZgaFjE_4zLZVnhXe4wn3HVChGwuQMg'
+    apiKey: process.env.REACT_APP_GOOGLE_KEY
 })(MapContainer);
    
 

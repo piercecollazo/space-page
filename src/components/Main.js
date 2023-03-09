@@ -16,21 +16,21 @@ export default class Main extends Component {
     }
 
     componentWillMount(){
-        fetch('http://api.open-notify.org/iss-now.json')
+        fetch('https://api.wheretheiss.at/v1/satellites/25544')
             .then(position => {
                 return position.json()
             })
             .then(data => {
                 this.setState({
-                    lat: data.iss_position.latitude,
-                    long:data.iss_position.longitude
+                    lat: data.latitude,
+                    long:data.longitude
                 })
             })
             .catch(error =>{
                 console.log(error)
             })
 
-        fetch('http://api.open-notify.org/astros.json')
+        fetch('https://corquaid.github.io/international-space-station-APIs/JSON/people-in-space.json')
             .then(roster => {
                 return roster.json()
             })
