@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/space-page/static/css/main.c739a6c8.chunk.css",
+    "main.js": "/space-page/static/js/main.6104cc4a.chunk.js",
+    "main.js.map": "/space-page/static/js/main.6104cc4a.chunk.js.map",
+    "runtime~main.js": "/space-page/static/js/runtime~main.80189aba.js",
+    "runtime~main.js.map": "/space-page/static/js/runtime~main.80189aba.js.map",
+    "static/js/2.e8dd4544.chunk.js": "/space-page/static/js/2.e8dd4544.chunk.js",
+    "static/js/2.e8dd4544.chunk.js.map": "/space-page/static/js/2.e8dd4544.chunk.js.map",
+    "index.html": "/space-page/index.html",
+    "precache-manifest.328e10e038a2305195a6244699085566.js": "/space-page/precache-manifest.328e10e038a2305195a6244699085566.js",
+    "service-worker.js": "/space-page/service-worker.js",
+    "static/css/main.c739a6c8.chunk.css.map": "/space-page/static/css/main.c739a6c8.chunk.css.map",
+    "static/media/Earth.mp4": "/space-page/static/media/Earth.5443e3f1.mp4"
+  }
+}
